@@ -2,10 +2,9 @@ use macroquad::prelude::*;
 
 #[macroquad::main("My game")]
 async fn main() {
+    let mut x = screen_width() /2.0 ;
+    let mut y = screen_height() /2.0 ;
     loop {
-        let mut x = screen_width() /2.0 ;
-        let mut y = screen_height() /2.0 ;
-
         if is_key_down(KeyCode::Right) {
             x += 1.0;
         }
